@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+  <test thread-count="5" name="Test1" verbose="5" parallel="classes">
+  <parameter name="url" value="http://gmail.com/" />
+  <parameter name="browserName" value="Chrome"/>
+    
+  
+  
+    <classes>
+      <class name="com.test.ui.cases.LoginTest"/>
+       <class name="com.test.ui.cases.LoginNegativeTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="Test2" verbose="5" parallel="classes">
+  <parameter name="url" value="https://www.ebay.com/" />
+  <parameter name="browserName" value="Chrome"/>
+    
+  
+  
+    <classes>
+      <class name="com.test.ui.cases.EpayTest"/>
+       
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->
